@@ -6,11 +6,11 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">   
 
-        <title>Tech Products</title>   
+        <title>Tech Learning</title>  
 
         <meta name="keywords" content="HTML5 Template" />
-        <meta name="description" content="Porto - Responsive HTML5 Template">
-        <meta name="author" content="okler.net">
+        <meta name="description" content="">
+        <meta name="author" content="">
 
         <!-- Favicon -->
         <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
@@ -20,7 +20,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1.0, shrink-to-fit=no">
 
         <!-- Web Fonts  -->
-        <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,600,700" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800%7CShadows+Into+Light" rel="stylesheet" type="text/css">
 
         <!-- Vendor CSS -->
         <link rel="stylesheet" href="{{ asset('tmp/vendor/bootstrap/css/bootstrap.min.css') }}">
@@ -30,8 +30,6 @@
         <link rel="stylesheet" href="{{ asset('tmp/vendor/owl.carousel/assets/owl.carousel.min.css') }}">
         <link rel="stylesheet" href="{{ asset('tmp/vendor/owl.carousel/assets/owl.theme.default.min.css') }}">
         <link rel="stylesheet" href="{{ asset('tmp/vendor/magnific-popup/magnific-popup.min.css') }}">
-        <link rel="stylesheet" href="{{ asset('tmp/vendor/bootstrap-star-rating/css/star-rating.min.css') }}">
-        <link rel="stylesheet" href="{{ asset('tmp/vendor/bootstrap-star-rating/themes/krajee-fas/theme.min.css') }}">
 
         <!-- Theme CSS -->
         <link rel="stylesheet" href="{{ asset('tmp/css/theme.css') }}">
@@ -45,10 +43,10 @@
         <link rel="stylesheet" href="{{ asset('tmp/vendor/rs-plugin/css/navigation.css') }}">
         
         <!-- Demo CSS -->
-        <link rel="stylesheet" href="{{ asset('tmp/css/demos/demo-product-landing.css') }}">
+
 
         <!-- Skin CSS -->
-        <link rel="stylesheet" href="{{ asset('tmp/css/skins/skin-product-landing.css') }}"> 
+        <link rel="stylesheet" href="{{ asset('tmp/css/skins/default.css') }}"> 
 
         <!-- Theme Custom CSS -->
         <link rel="stylesheet" href="{{ asset('tmp/css/custom.css') }}">
@@ -57,7 +55,14 @@
         <script src="{{ asset('tmp/vendor/modernizr/modernizr.min.js') }}"></script>
 
     </head>
-    <body data-target="#header" data-spy="scroll" data-offset="100">
+    <body class="loading-overlay-showing" data-plugin-page-transition data-loading-overlay data-plugin-options="{'hideDelay': 500}">
+        <div class="loading-overlay">
+            <div class="bounce-loader">
+                <div class="bounce1"></div>
+                <div class="bounce2"></div>
+                <div class="bounce3"></div>
+            </div>
+        </div>
 
         @yield('content')
 
@@ -78,8 +83,6 @@
         <script src="{{ asset('tmp/vendor/magnific-popup/jquery.magnific-popup.min.js') }}"></script>
         <script src="{{ asset('tmp/vendor/vide/jquery.vide.min.js') }}"></script>
         <script src="{{ asset('tmp/vendor/vivus/vivus.min.js') }}"></script>
-        <script src="{{ asset('tmp/vendor/bootstrap-star-rating/js/star-rating.min.js') }}"></script>
-        <script src="{{ asset('tmp/vendor/bootstrap-star-rating/themes/krajee-fas/theme.min.js') }}"></script>
         
         <!-- Theme Base, Components and Settings -->
         <script src="{{ asset('tmp/js/theme.js') }}"></script>
@@ -87,18 +90,12 @@
         <!-- Current Page Vendor and Views -->
         <script src="{{ asset('tmp/vendor/rs-plugin/js/jquery.themepunch.tools.min.js') }}"></script>
         <script src="{{ asset('tmp/vendor/rs-plugin/js/jquery.themepunch.revolution.min.js') }}"></script>
-
-        <!-- Demo -->
-        <script src="{{ asset('tmp/js/demos/demo-product-landing.js') }}"></script>
         
         <!-- Theme Custom -->
         <script src="{{ asset('tmp/js/custom.js') }}"></script>
         
         <!-- Theme Initialization Files -->
         <script src="{{ asset('tmp/js/theme.init.js') }}"></script>
-        
-        <!-- Examples -->
-        <script src="{{ asset('tmp/js/examples/examples.image360.js') }}"></script>
 
         <!-- Google Analytics: Change UA-XXXXX-X to be your site's ID. Go to http://www.google.com/analytics/ for more information.
         <script>
@@ -111,7 +108,6 @@
             ga('send', 'pageview');
         </script>
          -->
-
 
     </body>
 </html>
